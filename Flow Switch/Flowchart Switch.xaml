@@ -43,6 +43,10 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Flowchart_Switch" sap:VirtualizedContainerService.HintSize="674,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -59,9 +63,9 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID4">
+    <FlowStep x:Name="__ReferenceID5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,104.02</av:Point>
@@ -105,6 +109,7 @@
               <av:PointCollection x:Key="Default">335,250 365,250 365,239.52 440,239.52</av:PointCollection>
               <av:PointCollection x:Key="RedConnector">265,250 235,250 235,249.52 200,249.52</av:PointCollection>
               <av:PointCollection x:Key="BlueConnector">282.5,293.5 282.5,399.52 200,399.52</av:PointCollection>
+              <av:PointCollection x:Key="YellowConnector">317.5,293.5 317.5,379.52 410,379.52</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <FlowStep x:Key="Blue" x:Name="__ReferenceID3">
@@ -137,6 +142,21 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:MessageBox>
           </FlowStep>
+          <FlowStep x:Key="Yellow" x:Name="__ReferenceID4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">410,354.02</av:Point>
+                <av:Size x:Key="ShapeSize">200,51</av:Size>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Yellow&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:MessageBox>
+          </FlowStep>
         </FlowSwitch>
       </FlowStep.Next>
     </FlowStep>
@@ -144,5 +164,6 @@
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID3</x:Reference>
+    <x:Reference>__ReferenceID4</x:Reference>
   </Flowchart>
 </Activity>
