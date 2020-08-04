@@ -1610,9 +1610,9 @@
     "restore": {
       "projectUniqueName": "DataTable",
       "projectName": "DataTable",
-      "projectPath": "C:\\Users\\user\\Documents\\UiPath\\DataTable\\.local",
+      "projectPath": "E:\\GitRPABots\\NewRPABots\\DataTable\\.local",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\UiPath\\DataTable\\.local"
+      "outputPath": "E:\\GitRPABots\\NewRPABots\\DataTable\\.local"
     },
     "frameworks": {
       "net461": {
